@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: 1fr 15% 30% 30% 21%;
+    grid-template-areas: 
+    'hd nv'
+    'sc1 sc1'
+    'sc2 sc2'
+    'sc3 sc3'
+    'ft ft'
+    ;   
+    
+    height: 300vh;
+}
+
+header{
+   grid-area: hd;
+   background-color: #FEF9E1;
+   color: burlywood;
+   position: sticky;
+   top: 0;
+   
+
+}
+
+nav{
+    grid-area: nv;
+    background-color: #FEF9E1;
+    position: sticky;
+    top: 0;
+}
+
+#section1{
+    grid-area: sc1;
+    display: flex;
+    background-image: url('/img/page1.jpg');
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+#section2{
+    grid-area: sc2;
+    background-color: burlywood;
+}
+
+#section3{
+    grid-area: sc3;
+    background-color: chartreuse;
+}
+
+
+footer{
+    grid-area: ft;
+    background-color: black;
+}
+
+#logo{
+    display: grid;   
+    width: 10vh; 
+    height: 10vh;
+    border-radius: 50%; 
+    margin-left: 1vh;
+    margin-top: 1vh;
+    float: left;
+    background-color: #E5D0AC; 
+}
+
+
+#name{
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    font-size: 40px;
+    font-family: "Merriweather", serif;
+    
+}
+
+
+#title{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5vh;
+    margin-left: 60px;
+    margin-top: 10vh;
+    
+}
+
+#text{
+    margin-top: 1vh;
+    margin-left: 5vh;
+    font-family: "Merriweather", serif;
+    font-stretch: condensed;
+}
